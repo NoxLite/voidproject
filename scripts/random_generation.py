@@ -1,13 +1,13 @@
 import random
 
 chance = []
-for _ in range(40):
+for _ in range(60):
     chance.append('*')
 for _ in range(40):
     chance.append('b')
-for _ in range(10):
+for _ in range(5):
     chance.append('d')
-for _ in range(10):
+for _ in range(5):
     chance.append('sd')
 
 

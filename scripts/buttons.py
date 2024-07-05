@@ -4,7 +4,7 @@ font = pygame.font.Font(None, 32)
 
 
 class Button():
-    def __init__(self, x, y, width, height, color='#487fd9', text=''):
+    def __init__(self, x, y, width, height, color='#487fd9', text='', mode=''):
         super().__init__()
         self.x = x
         self.y = y
@@ -12,6 +12,7 @@ class Button():
         self.color = color
         self.is_clicked = False
         self.text = font.render(text, True, 'black')
+        self.mode = mode
 
     def draw(self, screen):
         pygame.draw.rect(screen, self.color, (self.x, self.y, *self.size))
